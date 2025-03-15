@@ -426,3 +426,35 @@ footer a:focus {
 	margin-top: 50px;
 	font-size: 22px;
 }
+
+.skills-tile {
+	width: 100px;          /* Adjust as needed */
+	height: 100px;         /* Adjust as needed */
+	background-color: #2b2b2b; /* or a different shade if you like */
+	border-radius: 6px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+}
+
+.skill-icon {
+	display: flex;
+	flex-wrap: wrap;       /* Wrap icons to next line if needed */
+	padding: 0;
+	list-style: none;
+	justify-content: center; /* Center each row of icons */
+}
+
+/* Example media query adjustments for mobile */
+@media (max-width: 576px) {
+	.resume-link {
+		top: 0.5rem;
+		right: 0.5rem;
+		padding: 0.3rem 0.8rem;
+	}
+	.resume-link a {
+		font-size: 0.9rem;
+	}
+}

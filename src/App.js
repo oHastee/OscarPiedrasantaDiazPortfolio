@@ -9,7 +9,6 @@ import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 
 class App extends Component {
-
   constructor(props) {
     super();
     this.state = {
@@ -23,30 +22,30 @@ class App extends Component {
     this.swapCurrentlyActiveLanguage(oppositeLangIconId);
     document.documentElement.lang = pickedLanguage;
     var resumePath =
-      document.documentElement.lang === window.$primaryLanguage
-        ? `res_primaryLanguage.json`
-        : `res_secondaryLanguage.json`;
+        document.documentElement.lang === window.$primaryLanguage
+            ? `res_primaryLanguage.json`
+            : `res_secondaryLanguage.json`;
     this.loadResumeFromPath(resumePath);
   }
 
   swapCurrentlyActiveLanguage(oppositeLangIconId) {
     var pickedLangIconId =
-      oppositeLangIconId === window.$primaryLanguageIconId
-        ? window.$secondaryLanguageIconId
-        : window.$primaryLanguageIconId;
+        oppositeLangIconId === window.$primaryLanguageIconId
+            ? window.$secondaryLanguageIconId
+            : window.$primaryLanguageIconId;
     document
-      .getElementById(oppositeLangIconId)
-      .removeAttribute("filter", "brightness(40%)");
+        .getElementById(oppositeLangIconId)
+        .removeAttribute("filter", "brightness(40%)");
     document
-      .getElementById(pickedLangIconId)
-      .setAttribute("filter", "brightness(40%)");
+        .getElementById(pickedLangIconId)
+        .setAttribute("filter", "brightness(40%)");
   }
 
   componentDidMount() {
-    this.loadSharedData();
+    this.loadSharedData(); // loads portfolio_shared_data.json
     this.applyPickedLanguage(
-      window.$primaryLanguage,
-      window.$secondaryLanguageIconId
+        window.$primaryLanguage,
+        window.$secondaryLanguageIconId
     );
   }
 
@@ -81,60 +80,61 @@ class App extends Component {
 
   render() {
     return (
-      <div>
-        <Header sharedData={this.state.sharedData.basic_info} />
-        <div className="col-md-12 mx-auto text-center language">
-          <div
-            onClick={() =>
-              this.applyPickedLanguage(
-                window.$primaryLanguage,
-                window.$secondaryLanguageIconId
-              )
-            }
-            style={{ display: "inline" }}
-          >
+        <div>
+          <Header sharedData={this.state.sharedData.basic_info} />
+          <div className="col-md-12 mx-auto text-center language">
+            <div
+                onClick={() =>
+                    this.applyPickedLanguage(
+                        window.$primaryLanguage,
+                        window.$secondaryLanguageIconId
+                    )
+                }
+                style={{ display: "inline" }}
+            >
             <span
-              className="iconify language-icon mr-5"
-              data-icon="twemoji-flag-for-flag-united-kingdom"
-              data-inline="false"
-              id={window.$primaryLanguageIconId}
+                className="iconify language-icon mr-5"
+                data-icon="twemoji-flag-for-flag-united-kingdom"
+                data-inline="false"
+                id={window.$primaryLanguageIconId}
             ></span>
-          </div>
-          <div
-            onClick={() =>
-              this.applyPickedLanguage(
-                window.$secondaryLanguage,
-                window.$primaryLanguageIconId
-              )
-            }
-            style={{ display: "inline" }}
-          >
+            </div>
+            <div
+                onClick={() =>
+                    this.applyPickedLanguage(
+                        window.$secondaryLanguage,
+                        window.$primaryLanguageIconId
+                    )
+                }
+                style={{ display: "inline" }}
+            >
             <span
-              className="iconify language-icon"
-              data-icon="twemoji-flag-for-flag-poland"
-              data-inline="false"
-              id={window.$secondaryLanguageIconId}
+                className="iconify language-icon"
+                data-icon="twemoji-flag-for-flag-poland"
+                data-inline="false"
+                id={window.$secondaryLanguageIconId}
             ></span>
+            </div>
           </div>
+          {/* Pass the loaded data to your components */}
+          <About
+              resumeBasicInfo={this.state.resumeData.basic_info}
+              sharedBasicInfo={this.state.sharedData.basic_info}
+          />
+          <Projects
+              resumeProjects={this.state.resumeData.projects}
+              resumeBasicInfo={this.state.resumeData.basic_info}
+          />
+          <Skills
+              sharedSkills={this.state.sharedData.skills}
+              resumeBasicInfo={this.state.resumeData.basic_info}
+          />
+          <Experience
+              resumeExperience={this.state.resumeData.experience}
+              resumeBasicInfo={this.state.resumeData.basic_info}
+          />
+          <Footer sharedBasicInfo={this.state.sharedData.basic_info} />
         </div>
-        <About
-          resumeBasicInfo={this.state.resumeData.basic_info}
-          sharedBasicInfo={this.state.sharedData.basic_info}
-        />
-        <Projects
-          resumeProjects={this.state.resumeData.projects}
-          resumeBasicInfo={this.state.resumeData.basic_info}
-        />
-        <Skills
-          sharedSkills={this.state.sharedData.skills}
-          resumeBasicInfo={this.state.resumeData.basic_info}
-        />
-        <Experience
-          resumeExperience={this.state.resumeData.experience}
-          resumeBasicInfo={this.state.resumeData.basic_info}
-        />
-        <Footer sharedBasicInfo={this.state.sharedData.basic_info} />
-      </div>
     );
   }
 }

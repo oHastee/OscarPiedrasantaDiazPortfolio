@@ -1,68 +1,161 @@
 {
-    "basic_info": {
-      "name": "Davina Griss",
-      "titles": [ "Front-end Developer", "Senior Data Engineer", "Dev Team lead", "Mobile App Developer" ],
-      "social": [
-        {
-          "name": "github",
-          "url": "https://github.com",
-          "class": "fab fa-github"
-        },
-        {
-          "name": "instagram",
-          "url": "https://www.instagram.com",
-          "class": "fab fa-instagram"
-        }
-      ],
-      "image": "myProfile.jpg"
-    },
-    "skills": {
-      "icons": [
-        {
-          "name": "HTML 5",
-          "class": "devicon-html5-plain",
-          "level": "95"
-        },
-        {
-          "name": "CSS 3",
-          "class": "devicon-css3-plain",
-          "level": "95"
-        },
-        {
-          "name": "Angular",
-          "class": "devicon-angularjs-plain",
-          "level": "80"
-        },
-        {
-          "name": "TypeScript",
-          "class": "devicon-typescript-plain",
-          "level": "90"
-        },
-        {
-          "name": "JavaScript",
-          "class": "devicon-javascript-plain",
-          "level": "70"
-        },
-        {
-          "name": "Sass",
-          "class": "devicon-sass-original",
-          "level": "75"
-        },
-        {
-          "name": "Bootstrap",
-          "class": "devicon-bootstrap-plain",
-          "level": "85"
-        },
-        {
-          "name": "C#",
-          "class": "devicon-csharp-plain",
-          "level": "65"
-        },
-        {
-          "name": "MySql",
-          "class": "devicon-mysql-plain",
-          "level": "60"
-        }
-      ]
-    }
+  "basic_info": {
+    "name": "Oscar Piedrasanta Diaz",
+    "titles": [
+      "Full Stack Developer",
+      "Software Engineer",
+      "Mobile App Developer",
+      "Machine Learning Engineer"
+    ],
+    "social": [
+      {
+        "name": "github",
+        "url": "https://github.com/oHastee",
+        "class": "fab fa-github"
+      },
+      {
+        "name": "linkedin",
+        "url": "https://www.linkedin.com/in/oscar-piedrasanta-diaz-ab054b2a9/",
+        "class": "fab fa-linkedin"
+      }
+    ],
+    "image": "Headshot.png"
+  },
+  "skills": {
+    "icons": [
+      {
+        "name": "HTML 5",
+        "class": "devicon-html5-plain colored"
+      },
+      {
+        "name": "CSS 3",
+        "class": "devicon-css3-plain colored"
+      },
+      {
+        "name": "JavaScript",
+        "class": "devicon-javascript-plain colored"
+      },
+      {
+        "name": "TypeScript",
+        "class": "devicon-typescript-plain colored"
+      },
+      {
+        "name": "Angular",
+        "class": "devicon-angularjs-plain colored"
+      },
+      {
+        "name": "React.js",
+        "class": "devicon-react-original colored"
+      },
+      {
+        "name": "Node.js",
+        "class": "devicon-nodejs-plain colored"
+      },
+      {
+        "name": "Express.js",
+        "class": "devicon-express-original colored",
+        "colorOverride": "#fff"
+      },
+      {
+        "name": "Spring Boot",
+        "class": "devicon-spring-plain colored"
+      },
+      {
+        "name": "Java",
+        "class": "devicon-java-plain colored"
+      },
+      {
+        "name": "C#",
+        "class": "devicon-csharp-plain colored"
+      },
+      {
+        "name": ".NET Core",
+        "class": "devicon-dotnetcore-plain colored"
+      },
+      {
+        "name": "Swift",
+        "class": "devicon-swift-plain colored"
+      },
+      {
+        "name": "Python",
+        "class": "devicon-python-plain colored"
+      },
+      {
+        "name": "Bash",
+        "class": "devicon-bash-plain colored",
+        "colorOverride": "#fff"
+      },
+      {
+        "name": "SQL Server",
+        "class": "devicon-microsoftsqlserver-plain colored"
+      },
+      {
+        "name": "PostgreSQL",
+        "class": "devicon-postgresql-plain colored"
+      },
+      {
+        "name": "MySql",
+        "class": "devicon-mysql-plain colored"
+      },
+      {
+        "name": "MongoDB",
+        "class": "devicon-mongodb-plain colored"
+      },
+      {
+        "name": "SQLite",
+        "class": "devicon-sqlite-plain colored"
+      },
+      {
+        "name": "Firebase",
+        "class": "devicon-firebase-plain colored"
+      },
+      {
+        "name": "Linux",
+        "class": "devicon-linux-plain colored",
+        "colorOverride": "#fff"
+      },
+      {
+        "name": "Docker",
+        "class": "devicon-docker-plain colored"
+      },
+      {
+        "name": "Git",
+        "class": "devicon-git-plain colored"
+      },
+      {
+        "name": "GitHub",
+        "class": "devicon-github-original colored",
+        "colorOverride": "#fff"
+      },
+      {
+        "name": "Figma",
+        "class": "devicon-figma-plain colored"
+      },
+      {
+        "name": "Slack",
+        "class": "devicon-slack-plain"
+      },
+      {
+        "name": "Gradle",
+        "class": "devicon-gradle-plain"
+      },
+      {
+        "name": "Microsoft Azure",
+        "class": "devicon-azure-plain colored"
+      },
+      {
+        "name": "GraphQL",
+        "class": "devicon-graphql-plain colored"
+      },
+      {
+        "name": "Pandas",
+        "class": "devicon-pandas-plain colored",
+        "colorOverride": "#fff"
+      },
+      {
+        "name": "TensorFlow",
+        "class": "devicon-tensorflow-original colored"
+      }
+    ]
   }
+}

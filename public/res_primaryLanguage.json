@@ -1,118 +1,159 @@
 {
-    "basic_info": {
-      "description_header": "Hi",
-      "description": "👋 I'm Davina Griss. Fictional person for preview purposes :) I'm working with newest front-end frameworks like Angular, React and Vue. What you are seeing now is portfolio template from Dorota1997. If you like this portfolio template, make sure to ⭐ the repository to make it more recognizable for other users. Thank you 💜",
-      "section_name": {
-        "about": "About me",
-        "projects": "Projects",
-        "skills": "Skills",
-        "experience": "Experience"
-      }
+  "basic_info": {
+    "description_header": "Hi",
+    "description": "👋 Im Oscar Piedrasanta Diaz, I'm about to complete my Computer Programming & Analysis program, and I love connecting with people and turning ideas into real-world products—whether that's a website, mobile app, or an AI model. I balance my passion for tech with a commitment to staying healthy, hitting the weights, and cherishing time with friends and family. I'm excited to graduate soon and can't wait to join a team that shares my enthusiasm for creativity, collaboration, and innovation. Thank you for reading 💜",
+    "section_name": {
+      "about": "About me",
+      "projects": "Projects",
+      "skills": "Skills",
+      "experience": "Experience"
+    }
+  },
+  "projects": [
+    {
+      "title": "Event Booking System",
+      "startDate": "2024",
+      "description": "The GBC EventBooking System is a microservices-based room booking and event management platform for George Brown College. It allows students, staff, and faculty to book campus rooms for meetings and events, and manages the entire process from room scheduling to event approval\u200B. The system is composed of several independent services (for users, rooms, bookings, events, approvals) that work together to handle bookings and enforce college policies (e.g. requiring staff approval for certain events). This architecture ensures each service is focused on a specific business domain, enabling better scalability and maintainability.",
+      "images": [
+        "images/portfolio/event-booking/Teamwork_7.png",
+        "images/portfolio/event-booking/GBC_EventBooking_System_Diagram.png"
+
+      ],
+      "url": "https://github.com/oHastee/GBC_EventBooking-Group42",
+      "technologies": [
+        { "class": "devicon-java-plain colored", "name": "Java" },
+        { "class": "devicon-spring-plain colored", "name": "Spring Boot" },
+        { "class": "devicon-mongodb-plain colored", "name": "MongoDB" },
+        { "class": "devicon-postgresql-plain colored", "name": "PostgreSQL" },
+        { "class": "devicon-apachekafka-original-wordmark", "name": "Apache Kafka" },
+        { "class": "devicon-docker-plain colored", "name": "Docker" },
+        { "class": "devicon-gradle-plain colored", "name": "Gradle" },
+        { "class": "devicon-postman-plain colored", "name": "Postman" }
+      ]
     },
-    "projects": [
-      {
-        "title": "Animal Shelter",
-        "startDate": "2020",
-        "description": "The most expanded application I had opportunity to work with. I've learned many technologies and my code was reviewed by awesome curator. Application handles all adoption processess and allows to store all evidence on adopting animals from animal shelter.",
-        "images": [
-          "images/portfolio/animal-shelter/p1.jpg",
-          "images/portfolio/animal-shelter/p2.jpg"
-        ],
-        "url": "",
-        "technologies": [
-          {
-            "class": "devicon-angularjs-plain",
-            "name": "Angular"
-          },
-          {
-            "class": "devicon-typescript-plain",
-            "name": "TypeScript"
-          },
-          {
-            "class": "devicon-csharp-plain",
-            "name": "C#"
-          }
-        ]
-      },
-      {
-        "title": "Photography",
-        "startDate": "2018",
-        "description": "Personal project for study subject. I was responsible for testing photography application that optimizes images with popular algorithms used by graphic editors like Pixlr or Adobe Photoshop. I've earned A grade :)",
-        "images": [
-          "images/portfolio/photography/p1.jpg",
-          "images/portfolio/photography/p2.jpg"
-        ],
-        "url": "https://github.com",
-        "technologies": [
-          {
-            "class": "devicon-react-original",
-            "name": "React"
-          },
-          {
-            "class": "devicon-javascript-plain",
-            "name": "JavaScript"
-          }
-        ]
-      },
-      {
-        "title": "3D Object Viewer",
-        "startDate": "2015",
-        "description": "One of the first apps I was working on my internship. I had to develop front-end implementation for app that shows 3D models of known buildings. This was also my first project in Angular framework. I've learned a lot!",
-        "images": [
-          "images/portfolio/adventure/p1.jpg",
-          "images/portfolio/adventure/p2.jpg"
-        ],
-        "url": "https://github.com",
-        "technologies": [
-          {
-            "class": "devicon-angularjs-plain",
-            "name": "Angular"
-          },
-          {
-            "class": "devicon-typescript-plain",
-            "name": "TypeScript"
-          },
-          {
-            "class": "devicon-csharp-plain",
-            "name": "C#"
-          }
-        ]
-      }
-    ],
-    "experience": [
-      {
-        "company": "DefOpenSource",
-        "title": "Front-End Developer",
-        "years": "10.2019 - present",
-        "mainTech": [
-          "Angular 8/9/10"
-        ],
-        "technologies": [
-          "REST API",
-          "RxJS",
-          "JavaScript",
-          "Bootstrap",
-          "MDBootstrap",
-          "EF Core",
-          ".NET Core",
-          "SignalR",
-          "Angular Material"
-        ]
-      },
-      {
-        "company": "Serros Solutions",
-        "title": "Intern",
-        "years": "01.2018 - 09.2019",
-        "mainTech": [
-          "Angular 7/8"
-        ],
-        "technologies": [
-          "RxJS",
-          "Django",
-          "PHP",
-          "JavaScript",
-          "DHTMLX Gantt"
-        ]
-      }
-    ]
-  }
+    {
+      "title": "Flight Management System",
+      "startDate": "2023",
+      "description": "This Flight Management System is a console-based application written in C# that allows airlines to:\n\n    Manage flights\n    Register and search customers,\n    Book flights for customers,\n    Enforce airline rules (e.g., no duplicate flights, booking restrictions).\n\nAll data is stored persistently in text files, allowing the system to retain information across multiple sessions.",
+      "images": [
+        "images/portfolio/flight-system/FLM5.png",
+        "images/portfolio/flight-system/team_working3.png"
+
+      ],
+      "url": "https://github.com/oHastee/Flight_Management_System",
+      "technologies": [
+        {"class": "devicon-csharp-plain colored", "name": "C#"}
+      ]
+    },
+    {
+      "title": "DineTrack Restaurant Manager",
+      "startDate": "2024",
+      "description": "DineTrack is a mobile application developed as a group project by a team of developers for tracking and reviewing personal favorite restaurants. The app features intuitive navigation, detailed restaurant information, personalized ratings, and robust filtering options, making dining decisions effortless and enjoyable.",
+      "images": [
+        "images/portfolio/dinetrack/DT.png",
+        "images/portfolio/dinetrack/Basic_Project_Image_3.jpg"
+      ],
+      "url": "https://github.com/melinabehzadi/G69-DineTrack",
+      "technologies": [
+        {"class": "devicon-androidstudio-plain colored", "name": "Android Studio"},
+        {"class": "devicon-java-plain colored", "name": "Java"},
+        {"class": "devicon-sqlite-plain-wordmark colored", "name": "SQLite"}
+
+      ]
+    },
+    {
+      "title": "Expense Tracker",
+      "startDate": "2023",
+      "description": "The Expense Tracker Application is a user-friendly financial management tool designed to help users efficiently record, categorize, and analyze their expenses. Built with Python \uD83D\uDC0D and MySQL \uD83D\uDDC3\uFE0F, this application supports detailed expense reporting and budgeting by allowing users to track spending habits, identify financial patterns, and maintain better control of their personal finances.",
+      "images": [
+        "images/portfolio/expense-tracker/ET.png",
+        "images/portfolio/expense-tracker/Solo_work.png"
+      ],
+      "url": "https://github.com/oHastee/Expense_Tracker_Application_Comp2152",
+      "technologies": [
+        {"class": "devicon-python-plain colored", "name": "Python"},
+        {"class": "devicon-mysql-plain-wordmark colored", "name": "MySQL"}
+      ]
+    },
+    {
+      "title": "Weather Dashboard",
+      "startDate": "2024",
+      "description": "This Weather App provides current weather data and a 5-day forecast for a user-specified location. The application dynamically updates the background based on the weather condition (e.g., sunny, cloudy, rainy) and offers a detailed 3-hour forecast when clicking on any day in the 5-day forecast.",
+      "images": [
+        "images/portfolio/weather-app/solowork_girl.png",
+        "images/portfolio/weather-app/sunny_output.png"
+      ],
+      "url": "https://github.com/oHastee/Weather_App_React",
+      "technologies": [
+        {"class": "devicon-react-original colored", "name": "React"},
+        {"class": "devicon-materialui-plain colored", "name": "Material UI"},
+        {"class": "devicon-axios-plain-wordmark colored", "name": "Axios"}
+      ]
+    },
+    {
+      "title": "NutriSnap - AI Nutrition Tool ",
+      "startDate": "2025",
+      "description": "NutriSnap is a user-friendly food tracking application that helps users monitor their daily calorie\nintake by leveraging machine learning and reliable nutritional databases. Users can capture\nimages of their meals, have food items recognized automatically, and receive calorie information\nthrough an integration with the USDA FoodData Central API. The app also enables users to\ntrack their progress via an intuitive progress ring, review past meal entries using a calendar-\nbased history, and benefit from additional features aimed at increasing engagement and\nflexibility.",
+      "images": [
+        "images/portfolio/nutrisnap/NS_2.png",
+        "images/portfolio/nutrisnap/NS.png"
+      ],
+      "url": "https://github.com/oHastee/NutriSnap",
+      "technologies": [
+        {"class": "devicon-swift-plain colored", "name": "Swift"},
+        {"class": "devicon-mongodb-plain colored", "name": "Mongo DB"},
+        {"class": "devicon-tensorflow-original colored", "name": "Tensor Flow"},
+        {"class": "devicon-keras-plain colored", "name": "Keras"},
+        {"class": "devicon-python-plain colored", "name": "Python"}
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "company": "Javada Services (Contract)",
+      "title": "Full Stack Engineer",
+      "years": "09.2024 - present",
+      "mainTech": [
+        "Spring Boot"
+      ],
+      "technologies": [
+        "Java",
+        "Spring Boot",
+        "Spring Data JPA",
+        "Spring Data MongoDB",
+        "Spring Cloud Gateway",
+        "Spring Security with KeyCloak",
+        "OAuth2/OpenID Connect",
+        "PostgreSQL",
+        "MongoDB",
+        "Docker & Docker Compose",
+        "Gradle",
+        "Lombok",
+        "Apache Kafka",
+        "Postman",
+        "REST API"
+      ]
+    },
+    {
+      "company": "Sol Cafe (Contract)",
+      "title": "Full Stack Developer",
+      "years": "01.2025 - Present",
+      "mainTech": [
+        "React"
+      ],
+      "technologies": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "React",
+        "Node JS",
+        "Express",
+        "MongoDB",
+        "REST API",
+        "Stripe API",
+        "Twilio API"
+
+      ]
+    }
+  ]
+}

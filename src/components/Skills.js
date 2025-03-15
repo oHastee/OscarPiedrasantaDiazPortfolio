@@ -1,44 +1,76 @@
 import React, { Component } from "react";
 
-class Skills extends Component {
-  render() {
-    if (this.props.sharedSkills && this.props.resumeBasicInfo) {
-      var sectionName = this.props.resumeBasicInfo.section_name.skills;
-      var skills = this.props.sharedSkills.icons.map(function (skills, i) {
-        return (
-          <li className="list-inline-item mx-3" key={i}>
-            <span>
-              <div className="text-center skills-tile">
-                <i className={skills.class} style={{ fontSize: "220%" }}>
-                  <p
-                    className="text-center"
-                    style={{ fontSize: "30%", marginTop: "4px" }}
-                  >
-                    {skills.name}
-                  </p>
-                </i>
-              </div>
-            </span>
-          </li>
-        );
-      });
+// Helper to chunk array into groups of 9
+function chunkArray(array, size) {
+    const results = [];
+    for (let i = 0; i < array.length; i += size) {
+        results.push(array.slice(i, i + size));
     }
+    return results;
+}
 
-    return (
-      <section id="skills">
-        <div className="col-md-12">
-          <div className="col-md-12">
-            <h1 className="section-title">
-              <span className="text-white">{sectionName}</span>
-            </h1>
-          </div>
-          <div className="col-md-12 text-center">
-            <ul className="list-inline mx-auto skill-icon">{skills}</ul>
-          </div>
-        </div>
-      </section>
-    );
-  }
+class Skills extends Component {
+    render() {
+        let sectionName = "";
+        let skillsRows = [];
+
+        if (this.props.sharedSkills && this.props.resumeBasicInfo) {
+            sectionName = this.props.resumeBasicInfo.section_name.skills;
+            const allIcons = this.props.sharedSkills.icons || [];
+
+            // Break icons into rows of 9
+            const chunkedIcons = chunkArray(allIcons, 9);
+
+            // Map each chunk into its own row
+            skillsRows = chunkedIcons.map((chunk, rowIndex) => {
+                // Create a list of icons for this row
+                const iconsList = chunk.map((skill, i) => {
+                    // Build dynamic style for the icon
+                    const iconStyle = { fontSize: "150%" };
+                    // Only override color if colorOverride is provided
+                    if (skill.colorOverride) {
+                        iconStyle.color = skill.colorOverride;
+                    }
+
+                    return (
+                        <li className="list-inline-item mx-3" key={i}>
+                            <div className="text-center skills-tile">
+                                <i className={skill.class} style={iconStyle}>
+                                    <p
+                                        className="text-center"
+                                        style={{ fontSize: "60%", marginTop: "4px" }}
+                                    >
+                                        {skill.name}
+                                    </p>
+                                </i>
+                            </div>
+                        </li>
+                    );
+                });
+
+                return (
+                    <div className="col-md-12 text-center" style={{ marginTop: "20px" }} key={rowIndex}>
+                        <ul className="list-inline mx-auto skill-icon" style={{ justifyContent: "center" }}>
+                            {iconsList}
+                        </ul>
+                    </div>
+                );
+            });
+        }
+
+        return (
+            <section id="skills">
+                <div className="col-md-12">
+                    <div className="col-md-12">
+                        <h1 className="section-title">
+                            <span className="text-white">{sectionName}</span>
+                        </h1>
+                    </div>
+                    {skillsRows}
+                </div>
+            </section>
+        );
+    }
 }
 
 export default Skills;
