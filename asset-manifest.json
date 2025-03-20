@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/OscarPiedrasantaDiazPortfolio/static/css/main.8149ebb8.chunk.css",
+    "main.js": "/OscarPiedrasantaDiazPortfolio/static/js/main.1ef597d3.chunk.js",
+    "main.js.map": "/OscarPiedrasantaDiazPortfolio/static/js/main.1ef597d3.chunk.js.map",
+    "runtime-main.js": "/OscarPiedrasantaDiazPortfolio/static/js/runtime-main.8a068f4c.js",
+    "runtime-main.js.map": "/OscarPiedrasantaDiazPortfolio/static/js/runtime-main.8a068f4c.js.map",
+    "static/css/2.ee6fb1dc.chunk.css": "/OscarPiedrasantaDiazPortfolio/static/css/2.ee6fb1dc.chunk.css",
+    "static/js/2.342bcaac.chunk.js": "/OscarPiedrasantaDiazPortfolio/static/js/2.342bcaac.chunk.js",
+    "static/js/2.342bcaac.chunk.js.map": "/OscarPiedrasantaDiazPortfolio/static/js/2.342bcaac.chunk.js.map",
+    "index.html": "/OscarPiedrasantaDiazPortfolio/index.html",
+    "precache-manifest.3e8b359c9e6c91468c1ae7a4805bfd02.js": "/OscarPiedrasantaDiazPortfolio/precache-manifest.3e8b359c9e6c91468c1ae7a4805bfd02.js",
+    "service-worker.js": "/OscarPiedrasantaDiazPortfolio/service-worker.js",
+    "static/css/2.ee6fb1dc.chunk.css.map": "/OscarPiedrasantaDiazPortfolio/static/css/2.ee6fb1dc.chunk.css.map",
+    "static/css/main.8149ebb8.chunk.css.map": "/OscarPiedrasantaDiazPortfolio/static/css/main.8149ebb8.chunk.css.map",
+    "static/js/2.342bcaac.chunk.js.LICENSE.txt": "/OscarPiedrasantaDiazPortfolio/static/js/2.342bcaac.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8a068f4c.js",
+    "static/css/2.ee6fb1dc.chunk.css",
+    "static/js/2.342bcaac.chunk.js",
+    "static/css/main.8149ebb8.chunk.css",
+    "static/js/main.1ef597d3.chunk.js"
+  ]
+}
