@@ -46,7 +46,7 @@
       ]
     },
     {
-      "title": "DineTrack Restaurant Manager",
+      "title": "DineTrack",
       "startDate": "2024",
       "description": "DineTrack is a mobile application developed as a group project by a team of developers for tracking and reviewing personal favorite restaurants. The app features intuitive navigation, detailed restaurant information, personalized ratings, and robust filtering options, making dining decisions effortless and enjoyable.",
       "images": [
@@ -91,7 +91,7 @@
       ]
     },
     {
-      "title": "NutriSnap - AI Nutrition Tool ",
+      "title": "NutriSnap",
       "startDate": "2025",
       "description": "NutriSnap is a user-friendly food tracking application that helps users monitor their daily calorie\nintake by leveraging machine learning and reliable nutritional databases. Users can capture\nimages of their meals, have food items recognized automatically, and receive calorie information\nthrough an integration with the USDA FoodData Central API. The app also enables users to\ntrack their progress via an intuitive progress ring, review past meal entries using a calendar-\nbased history, and benefit from additional features aimed at increasing engagement and\nflexibility.",
       "images": [

@@ -1,116 +1,155 @@
 {
-    "basic_info": {
-      "description_header": "Cześć",
-      "description": "👋 Jestem Davina Griss. Fikcyjna osoba na potrzeby demonstracji. Pracuję z najnowszymi frameworkami front-end takimi jak Angular, React i Vue. To co teraz widzisz to szablon portfolio od Dorota1997. Jeżeli podoba Ci się ten szablon portfolio nie zapomnij o ⭐, żeby było bardziej rozpoznawalne dla innych użytkowników. Dzięki 💜",
-      "section_name": {
-        "about": "O mnie",
-        "projects": "Projekty",
-        "skills": "Umiejętności",
-        "experience": "Doświadczenie"
-      }
+  "basic_info": {
+    "description_header": "Salut",
+    "description": "👋 Je m'appelle Oscar Piedrasanta Diaz, je suis sur le point de terminer mon programme de Computer Programming & Analysis, et j'adore établir des liens avec les gens et transformer des idées en produits concrets, qu'il s'agisse d'un site web, d'une application mobile ou d'un modèle d'IA. J'équilibre ma passion pour la technologie avec un engagement à rester en bonne santé, à faire de la musculation et à passer du temps avec mes amis et ma famille. Je suis ravi d'être bientôt diplômé et j'ai hâte de rejoindre une équipe qui partage mon enthousiasme pour la créativité, la collaboration et l'innovation. Merci d'avoir lu 💜",
+    "section_name": {
+      "about": "À propos de moi",
+      "projects": "Projets",
+      "skills": "Compétences",
+      "experience": "Expérience"
+    }
+  },
+  "projects": [
+    {
+      "title": "Système de réservation",
+      "startDate": "2024",
+      "description": "La plateforme de réservation de salles et de gestion d'événements GBC EventBooking est basée sur une architecture de microservices pour le George Brown College. Elle permet aux étudiants, au personnel et aux professeurs de réserver des salles sur le campus pour des réunions et des événements, et gère l'ensemble du processus, de la planification des salles à l'approbation des événements. Le système est composé de plusieurs services indépendants (pour les utilisateurs, les salles, les réservations, les événements, les approbations) qui fonctionnent ensemble pour gérer les réservations et appliquer les politiques du collège (par exemple, exiger l'approbation du personnel pour certains événements). Cette architecture garantit que chaque service est axé sur un domaine métier spécifique, permettant une meilleure évolutivité et maintenabilité.",
+      "images": [
+        "images/portfolio/event-booking/Teamwork_7.png",
+        "images/portfolio/event-booking/GBC_EventBooking_System_Diagram.png"
+      ],
+      "url": "https://github.com/oHastee/GBC_EventBooking-Group42",
+      "technologies": [
+        { "class": "devicon-java-plain colored", "name": "Java" },
+        { "class": "devicon-spring-plain colored", "name": "Spring Boot" },
+        { "class": "devicon-mongodb-plain colored", "name": "MongoDB" },
+        { "class": "devicon-postgresql-plain colored", "name": "PostgreSQL" },
+        { "class": "devicon-apachekafka-original-wordmark", "name": "Apache Kafka" },
+        { "class": "devicon-docker-plain colored", "name": "Docker" },
+        { "class": "devicon-gradle-plain colored", "name": "Gradle" },
+        { "class": "devicon-postman-plain colored", "name": "Postman" }
+      ]
     },
-    "projects": [
-      {
-        "title": "Animal Shelter",
-        "startDate": "2020",
-        "description": "Najbardziej rozbudowana aplikacja nad którą miałam okazję pracować. Poznałam dużo technologii a mój kod by sprawdzany przez super opiekuna. Aplikacja obsługuje wszystkie procesy adopcji i pozwala na przechowywanie wszelkiej dokumentacji związanej z adopcją zwierząt ze schroniska.",
-        "images": [
-          "images/portfolio/animal-shelter/p1.jpg",
-          "images/portfolio/animal-shelter/p2.jpg"
-        ],
-        "url": "",
-        "technologies": [
-          {
-            "class": "devicon-angularjs-plain",
-            "name": "Angular"
-          },
-          {
-            "class": "devicon-typescript-plain",
-            "name": "TypeScript"
-          },
-          {
-            "class": "devicon-csharp-plain",
-            "name": "C#"
-          }
-        ]
-      },
-      {
-        "title": "Photography",
-        "startDate": "2018",
-        "description": "Osobisty projekt na przedmiot ze studiów. Byłam odpowiedzilna za testowanie aplikacji, która optymalizuje zdjęcia z pomocą popularnych algorytmów używanych przed edytory grafiki takie jak Pixlr czy Adobe Photoshop. Otrzymałam 5-tkę za projekt :)",
-        "images": [
-          "images/portfolio/photography/p1.jpg",
-          "images/portfolio/photography/p2.jpg"
-        ],
-        "url": "https://github.com",
-        "technologies": [
-          {
-            "class": "devicon-react-original",
-            "name": "React"
-          },
-          {
-            "class": "devicon-javascript-plain",
-            "name": "JavaScript"
-          }
-        ]
-      },
-      {
-        "title": "3D Object Viewer",
-        "startDate": "2015",
-        "description": "Jedna z pierwszych aplikacji nad którymi pracowałam na stażu. Musiałam przygotować front-end dla aplikacji, która pokazuje modele 3D znanych budynków. To był także mój pierwszy projekt w frameworku Angular. Dużo się nauczyłam!",
-        "images": [
-          "images/portfolio/adventure/p1.jpg",
-          "images/portfolio/adventure/p2.jpg"
-        ],
-        "url": "https://github.com",
-        "technologies": [
-          {
-            "class": "devicon-angularjs-plain",
-            "name": "Angular"
-          },
-          {
-            "class": "devicon-typescript-plain",
-            "name": "TypeScript"
-          },
-          {
-            "class": "devicon-csharp-plain",
-            "name": "C#"
-          }
-        ]
-      }
-    ],
-    "experience": [
-      {
-        "company": "DefOpenSource",
-        "title": "Front-End Developer",
-        "years": "10.2019 - obecnie",
-        "mainTech": [
-          "Angular 8/9/10"
-        ],
-        "technologies": [
-          "REST API",
-          "RxJS",
-          "JavaScript",
-          "Bootstrap",
-          "MDBootstrap",
-          "EF Core",
-          "Angular Material"
-        ]
-      },
-      {
-        "company": "Serros Solutions",
-        "title": "Stażystka",
-        "years": "01.2018 - 09.2019",
-        "mainTech": [
-          "Angular 7/8"
-        ],
-        "technologies": [
-          "REST API",
-          "RxJS",
-          "Swagger",
-          "JavaScript",
-          "DHTMLX Gantt"
-        ]
-      }
-    ]
-  }
+    {
+      "title": "Système de gestion des vols",
+      "startDate": "2023",
+      "description": "Cette application de gestion des vols est une application console écrite en C# qui permet aux compagnies aériennes de :\n\n    Gérer les vols\n    Enregistrer et rechercher des clients\n    Réserver des vols pour les clients\n    Appliquer les règles de la compagnie (par exemple, pas de vols en double, restrictions de réservation)\n\nToutes les données sont stockées de manière persistante dans des fichiers texte, ce qui permet au système de conserver les informations au fil des sessions.",
+      "images": [
+        "images/portfolio/flight-system/FLM5.png",
+        "images/portfolio/flight-system/team_working3.png"
+      ],
+      "url": "https://github.com/oHastee/Flight_Management_System",
+      "technologies": [
+        { "class": "devicon-csharp-plain colored", "name": "C#" }
+      ]
+    },
+    {
+      "title": "DineTrack",
+      "startDate": "2024",
+      "description": "DineTrack est une application mobile développée en groupe pour suivre et évaluer ses restaurants préférés. L'application offre une navigation intuitive, des informations détaillées sur les restaurants, des évaluations personnalisées et des options de filtrage robustes, rendant les décisions de restauration plus simples et agréables.",
+      "images": [
+        "images/portfolio/dinetrack/DT.png",
+        "images/portfolio/dinetrack/Basic_Project_Image_3.jpg"
+      ],
+      "url": "https://github.com/melinabehzadi/G69-DineTrack",
+      "technologies": [
+        { "class": "devicon-androidstudio-plain colored", "name": "Android Studio" },
+        { "class": "devicon-java-plain colored", "name": "Java" },
+        { "class": "devicon-sqlite-plain-wordmark colored", "name": "SQLite" }
+      ]
+    },
+    {
+      "title": "Expense Tracker",
+      "startDate": "2023",
+      "description": "L'application Expense Tracker est un outil de gestion financière facile à utiliser, conçu pour aider les utilisateurs à enregistrer, catégoriser et analyser efficacement leurs dépenses. Développée en Python 🐍 et MySQL 🗃️, cette application offre des rapports de dépenses détaillés et une fonctionnalité de budgétisation, permettant aux utilisateurs de suivre leurs habitudes de dépenses, d'identifier des tendances financières et de garder un meilleur contrôle de leurs finances personnelles.",
+      "images": [
+        "images/portfolio/expense-tracker/ET.png",
+        "images/portfolio/expense-tracker/Solo_work.png"
+      ],
+      "url": "https://github.com/oHastee/Expense_Tracker_Application_Comp2152",
+      "technologies": [
+        { "class": "devicon-python-plain colored", "name": "Python" },
+        { "class": "devicon-mysql-plain-wordmark colored", "name": "MySQL" }
+      ]
+    },
+    {
+      "title": "Tableau de bord météo",
+      "startDate": "2024",
+      "description": "Cette application météo fournit des données météorologiques actuelles et une prévision sur 5 jours pour un lieu spécifié par l'utilisateur. L'application met à jour dynamiquement l'arrière-plan en fonction des conditions météorologiques (par exemple, ensoleillé, nuageux, pluvieux) et propose une prévision détaillée toutes les 3 heures en cliquant sur n'importe quel jour de la prévision sur 5 jours.",
+      "images": [
+        "images/portfolio/weather-app/solowork_girl.png",
+        "images/portfolio/weather-app/sunny_output.png"
+      ],
+      "url": "https://github.com/oHastee/Weather_App_React",
+      "technologies": [
+        { "class": "devicon-react-original colored", "name": "React" },
+        { "class": "devicon-materialui-plain colored", "name": "Material UI" },
+        { "class": "devicon-axios-plain-wordmark colored", "name": "Axios" }
+      ]
+    },
+    {
+      "title": "NutriSnap",
+      "startDate": "2025",
+      "description": "NutriSnap est une application de suivi alimentaire conviviale qui aide les utilisateurs à surveiller leur apport calorique quotidien grâce à l'apprentissage automatique et à des bases de données nutritionnelles fiables. Les utilisateurs peuvent prendre des photos de leurs repas, reconnaître automatiquement les aliments et recevoir des informations caloriques grâce à l'intégration avec l'API USDA FoodData Central. L'application permet également aux utilisateurs de suivre leurs progrès via un anneau de progression intuitif, de consulter leurs repas passés à l'aide d'un historique basé sur un calendrier, et de profiter de fonctionnalités supplémentaires visant à accroître l'engagement et la flexibilité.",
+      "images": [
+        "images/portfolio/nutrisnap/NS_2.png",
+        "images/portfolio/nutrisnap/NS.png"
+      ],
+      "url": "https://github.com/oHastee/NutriSnap",
+      "technologies": [
+        { "class": "devicon-swift-plain colored", "name": "Swift" },
+        { "class": "devicon-mongodb-plain colored", "name": "Mongo DB" },
+        { "class": "devicon-tensorflow-original colored", "name": "Tensor Flow" },
+        { "class": "devicon-keras-plain colored", "name": "Keras" },
+        { "class": "devicon-python-plain colored", "name": "Python" }
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "company": "Javada Services (Contrat)",
+      "title": "Ingénieur Full Stack",
+      "years": "09.2024 - présent",
+      "mainTech": [
+        "Spring Boot"
+      ],
+      "technologies": [
+        "Java",
+        "Spring Boot",
+        "Spring Data JPA",
+        "Spring Data MongoDB",
+        "Spring Cloud Gateway",
+        "Spring Security with KeyCloak",
+        "OAuth2/OpenID Connect",
+        "PostgreSQL",
+        "MongoDB",
+        "Docker & Docker Compose",
+        "Gradle",
+        "Lombok",
+        "Apache Kafka",
+        "Postman",
+        "REST API"
+      ]
+    },
+    {
+      "company": "Sol Cafe (Contrat)",
+      "title": "Développeur Full Stack",
+      "years": "01.2025 - Présent",
+      "mainTech": [
+        "React"
+      ],
+      "technologies": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "React",
+        "Node JS",
+        "Express",
+        "MongoDB",
+        "REST API",
+        "Stripe API",
+        "Twilio API"
+      ]
+    }
+  ]
+}
